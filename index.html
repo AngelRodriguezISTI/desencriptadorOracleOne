@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Oracle One</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Sweet Alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+
+</head>
+<!-- Contenido completo -->
+<body class="grid-container">
+    <!-- header -->
+    <header class="header">
+        <!-- imagen Alura logo -->
+        <img src="img/logo-dark-fill.png">
+    </header>
+    <!-- Contenido de Titulo -->
+    <nav class="navbar">
+        <!-- Titulo -->
+        <h1>Oracle One Challenge</h1>
+    </nav>
+    <!-- Contenido de caja de resultado -->
+    <aside class="sidebar">
+        <!-- Contenedor -->
+        <div class="cajaMensajeContainer">
+            <!-- Muestra el mensaje  -->
+            <h2 id="resultadoMensaje"></h2>
+            <!-- Mensaje de entrada -->
+            <h3 id="ningun">Ningún mensaje fue encontrado.</h3>
+
+            <p id="pls">Por favor escribe un mensaje para desencriptar.</p>
+            <!-- Imagen signo de interrogación -->
+            <img id="int" src="img/pre">
+            <!-- Boton para copiar contenido -->
+            <button class="botonCopiar" onclick="copiarTexto();" id="copiarBoton" >Copiar</button>
+
+        </div>
+        
+    </aside>
+    <!-- Contenido de mensaje de usuario -->
+    <article class="main">
+        <!-- Area donde se captura el mensaje, y el placeholder de este -->
+        <textarea id="textoUsuario" placeholder="Escribe tu mensaje..."></textarea>
+
+    </article>
+    <!-- Sección para botones de encriptado -->
+    <section class="botones">
+        <!-- Boton de encriptado -->
+        <button class="botonesPrincipales" onclick="encriptarMensaje();" id="botonEncriptar">Encriptar Mensaje</button>;
+        <!-- Boton de desencriptado -->
+        <button class="botonesPrincipales" onclick="desencriptarMensaje();" id="botonDesencriptar" >Desencriptar Mensaje</button>
+
+    </section>
+
+    <!-- Footer para redes -->
+    <footer class="footer">Luis Angel Rodriguez 
+        
+        <a  href="https://www.linkedin.com/in/luis-%C3%A1ngel-rodr%C3%ADguez-ortiz-473057247/"><img id="lin" src="img/lin.png">
+        </a>
+        
+    </footer>
+
+
+    <!-- referencia a JavaScript -->
+    <script src="app.js" defer>
+        //========referencias a botones=======//
+        var btn = document.querySelector('#botonEncriptar');
+        var btn2 = document.querySelector('#botonDesencriptar');
+        var btn3 = document.querySelector('#copiarBoton');
+        
+        
+    </script>
+</body>
+</html>
